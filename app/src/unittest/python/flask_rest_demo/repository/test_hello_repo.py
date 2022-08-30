@@ -1,5 +1,3 @@
-import json
-
 import pytest
 from assertpy import assert_that
 from flask_rest_demo.repository.hello_repo import HelloRepo, Hello, HelloEncoder

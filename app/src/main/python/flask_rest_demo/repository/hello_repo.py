@@ -29,7 +29,7 @@ class HelloRepo:
 
     def save(self, hello):
         self.last_id+=1
-        self.hellos[id]=hello
+        self.hellos[self.last_id]=hello
 
     def delete(self, id):
         self.hellos.pop(id)
