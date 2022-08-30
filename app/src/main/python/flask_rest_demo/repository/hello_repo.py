@@ -32,5 +32,8 @@ class HelloRepo:
         self.hellos[self.last_id]=hello
 
     def delete(self, id):
-        self.hellos.pop(id)
+        if id in self.hellos.keys():
+            self.hellos.pop(id)
 
+    def update(self, id, hello):
+        self.hellos[id]=hello
